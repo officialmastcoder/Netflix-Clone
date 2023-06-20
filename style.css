@@ -1,0 +1,300 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+    
+    
+}
+body{
+background-color: black;
+
+}
+header{
+    background-image: url(/assets/hero-section.jpg);
+    height: 700px;
+
+    
+}
+
+.navbar{
+    /* background-image: url(/assets/hero-section.jpg); */
+    height: 700px;
+    display: flex;
+    background-color: rgb(0, 0, 0, 0.75) ;
+    
+
+}
+
+.logo{
+    color: red;
+    font-weight: 900;
+    font-size: 3rem;
+    height: 24px;
+    width: 24px;
+    font-family: 'Franklin Gothic Medium';
+    margin-left: 300px;
+
+}
+
+.lang{
+    height: 32px;
+    width: 125px;
+    margin-left: 700px;
+    margin-top: 10px;
+    text-align: center;
+    background-color: transparent;
+    color: #ffff;
+    font-weight: 700px;
+    padding: 6px 36px;
+
+
+}
+.signin{
+    background-color: #E50914;
+    color: #ffff;
+    padding: 4px 16px;
+    border-radius: 4px;
+    border: none;
+    font-size: 0.85rem;
+    height: 32px;
+    width: 76px;
+
+}
+.signin-btn{
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.lang i{
+    height:20px ;
+}
+
+.home-content {
+   text-align: center;
+   position: relative;
+    color: #ffff;
+    bottom: 400px;
+}
+
+.home-content h1{
+    font-size: 3rem;
+    padding: 5px;
+    font-weight: 600;
+}
+
+.home-content p{
+    padding: 5px;
+    font-weight: 400;
+    font-size: 1.6rem;
+
+}
+
+.home-content h3{
+    font-size: 1.25rem;
+    font-weight: 400;
+    line-height: 1.875rem;
+
+}
+
+.home-content input{
+    height: 56px;
+    width: 383px;
+    padding: 24px 16px 8px;
+    line-height: 1.5rem;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border: 2px solid #a7a0a0;
+    border-radius: 5px;
+    text-align: left;
+    padding: 25px;
+}
+
+.home-content button{
+    height: 56px;
+    width: 194px;
+    margin: 0 0 0 8px;
+    padding: 12px 24px;
+    color: white;
+    background-color: rgba(229, 09, 20, 1);
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+    position: relative;
+    top: 4px;
+
+
+}
+
+.box1{
+    background-color: black;
+    height: 529px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #ffff;
+    border-top: 7px solid #a7a0a06e;
+    border-bottom: 7px solid #a7a0a06e;
+}
+
+.box1-content{
+    height:385px ;
+    width: 100%;
+    position: absolute;
+    margin: 0 160px;
+    display: inline-block;
+    
+}
+
+.box1-content h2{
+    position: relative;
+    top: 170px;
+    font-size: 3rem;
+}
+
+
+.box1-content p{
+    position: relative;
+    top: 220px;
+    font-size: 1.5rem;
+    
+}
+
+.box1-content img{
+    position: relative;
+    left: 700px;
+    bottom: 100px;
+    z-index: 1;
+    
+}
+
+.box1-content video{
+    position: relative;
+    bottom: 215px;
+    left: 139px; 
+}
+
+
+.mob{
+    height: 529px;
+    width: 100%;
+    display: flex;
+    border-bottom: 7px solid #a7a0a06e;
+}
+
+.mob-content{
+    height: 385px;
+    width: 100%;
+    margin: 0 32px;
+    color: #ffff;
+}
+
+.mob-content h2{
+    font-size: 3rem;
+    position: relative;
+    bottom: 80%;
+    left: 45%;
+}
+
+.mob-content p{
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 75%;
+    left: 45%;
+}
+
+.box3{
+    background-color: black;
+    height: 529px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    color: #ffff;
+    border-top: 7px solid #a7a0a06e;
+    border-bottom: 7px solid #a7a0a06e;
+}
+.box3-content{
+    height:385px ;
+    width: 100%;
+    position: absolute;
+    margin: 0 160px;
+    display: inline-block;
+
+}
+
+.box3-content h2{
+    position: relative;
+    top: 170px;
+    font-size: 3rem;
+}
+
+
+.box3-content p{
+    position: relative;
+    top: 220px;
+    font-size: 1.5rem;
+    
+}
+
+.mac{
+    position: relative;
+    left: 700px;
+    bottom: 100px;
+    z-index: 1;
+}
+
+.mac-video{
+    position: relative;
+    bottom: 310px;
+    left: 170px; 
+    width: 415px;
+   
+}
+
+.mob1{
+    height: 529px;
+    width: 100%;
+    display: flex;
+    border-bottom: 7px solid #a7a0a06e;
+
+}
+
+.mob1-content{
+    height: 385px;
+    width: 100%;
+    margin: 0 32px;
+    color: #ffff;
+}
+
+.mob1-content h2{
+    font-size: 3rem;
+    position: relative;
+    bottom: 80%;
+    left: 45%;
+}
+
+.mob1-content p{
+    font-size: 1.5rem;
+    position: relative;
+    bottom: 75%;
+    left: 45%;
+}
+
+.faqs{
+    height: 933px;
+    width: 100%;
+}
+
+.data-faqs{
+    text-align: center;
+    
+
+}
+.data-faqs h2{
+    color: #ffff;
+    font-size: 3rem;
+    padding: 20px;
+}
