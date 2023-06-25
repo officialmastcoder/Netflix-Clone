@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="signin.css">
+    <title>Login</title>
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo">NETFLIX</div>
+            
+
+        </div>
+    
+
+    <div class="login-box">
+        <div class="form-data">
+            <h2>Sign In</h2>
+            <form action="/function.js">
+                <!-- <label for="Username">Username</label> -->
+                <input type="text" name="Username" placeholder="Email Or Phone number" class="forminput inputbox">
+                <br>
+                <!-- <label for="Password">Password</label> -->
+                <input type="text" name="Password" placeholder="Password" class="forminput inputbox">
+                <br>
+                
+                <input type="Submit" class="btn forminput" name="signin"  style="text-align: center;">
+                <!-- <label for="signin"> Sign in</label> -->
+
+                <input type="checkbox" name="rememberme" class="rememberme">
+                <label for="rememberme" class="remembertxt">Remember me</label>
+
+                <span class="needhlp"><a href="#">Need Help?</a></span>
+            </form>
+
+            <div class="signup">
+                <div class="signup_now">
+                    New to Netflix? <a href="#">Sign up now.</a>
+                </div>
+                <span>This page is protected by Google reCAPTCHA to <br> ensure you're not a bot. <a href="#" id="learnid" onclick="myfunction()">Learn more.</a></span>
+                <br>
+                <span id="learnmore" class="learnmore"></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-data">
+            <p>Questions? Call 000-800-919-1694</p>
+        </div>
+
+        <span class="foot">Faqs</span>
+        <span class="foot1">Help Centre</span>
+        <span class="foot2">Term Of Use</span>
+        <span class="foot3">Privicy</span>
+        <span class="foot4">Cookie Preferences</span>
+        <span class="foot5">Corporate Information</span>
+        
+        <select class="lang">
+            <option value="English">
+              <i class="fa-sharp fa-regular fa-globe"></i>English
+            </option>
+            <option value="Hindi">
+              <i class="fa-sharp fa-regular fa-globe"></i>Hindi
+            </option>
+          </select>
+       
+    </div>
+</header>
+<script src="/function.js"></script>
+</body>
+</html>

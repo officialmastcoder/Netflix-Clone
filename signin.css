@@ -1,0 +1,233 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    
+    
+}
+
+
+
+
+header{
+    background-image: url(/assets/signin.jpg);
+    height: 1050px;
+    
+    
+    
+    
+}
+
+.navbar{
+    height: 1050px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.5);
+    position: sticky;
+    
+}
+
+.logo{
+    color: red;
+    font-size: 50px;
+    padding: 0 0 0 44;
+    margin-left: 20px;
+    /* margin-top: PX; */
+    text-transform: capitalize;
+    font-weight: 700;
+
+
+}
+
+.login-box{
+    height: 610px;
+    width: 420px;
+    background-color: rgb(0, 0, 0 , 0.68);
+    /* position: relative;
+    top: 50%;
+    left: 50%; */
+    position: relative;
+    left: 38%;
+    top: -97%;
+    border: none;
+    
+}
+
+.inputbox{
+    background-color: #333333;
+    text-align: center;
+
+    
+}
+
+.form-data .forminput{
+    
+   text-align: left;
+   color: white;
+   display: block;
+   position: relative;
+   left: 13%;
+   height: 50px;
+   width: 314px;
+   padding: 16px 20px 0;
+   border-radius: 10px;
+   border: none;
+  
+}
+
+.form-data h2{
+    font-size: 2rem;
+    color: white;
+    font-weight: 700;
+    margin-top: 30px;
+    padding-bottom: 30px;
+    padding: 35px;
+    position: relative;
+    left: 20px;
+    
+}
+
+.btn{
+    text-align: center;
+    background-color: red;
+    color: #ffff;
+    margin-bottom: 10px;
+    font-size: 1.2rem;
+    font-weight: 700;
+    
+    
+}
+
+.rememberme{
+    position: relative;
+    left: 15%;
+    color: #b3b3b3;
+}
+.remembertxt{
+    position: relative;
+    font-size: 13px;
+    left: 17%;
+    color: #b3b3b3;
+}
+
+.needhlp a{
+    color: #b3b3b3;
+    position: relative;
+    left: 46%;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.signup{
+    height: 280px;
+    width: 420px;
+    display: block;
+    
+}
+
+.signup_now {
+    position: relative;
+    top: 30%;
+    left: 15%;
+    color: #737373;
+    
+}
+.signup_now a{
+    color: white;
+    text-decoration: none;
+
+}
+
+span a{
+    color: blue;
+    text-decoration: none;
+
+}
+.signup span{
+    position: relative;
+    top:35% ;
+    left: 15%;
+    font-size: 13px;
+    color: #8c8c8c;
+}
+
+.learnmore{
+    font-size: 10px;
+    color: #8c8c8c;
+    text-align: center;
+    position: relative;
+    top: 10%;
+
+
+}
+
+.blue{
+    color: blue;
+}
+
+.footer{
+    height: 242px;
+    width: 100vw;
+    background-color: rgb(0, 0, 0, 0.68);
+    position: relative;
+    top: -89%;
+    display: flex;
+    
+}
+
+.footer-data{
+    position: relative;
+    left: 18%;
+    top: 10%;
+    color: #737373;
+}
+
+
+
+.foot{
+    position: relative;
+    left: 3.8%;
+    top: 25%;
+    color: #737373;
+}
+
+.foot1{
+    position: relative;
+    left: 8%;
+    top: 25%;
+    color: #737373;
+}
+.foot2{
+    position: relative;
+    left: 12%;
+    top: 25%;
+    color: #737373;
+}
+.foot3{
+    position: relative;
+    left: 16%;
+    top: 25%;
+    color: #737373;
+}
+.foot4{
+    position: relative;
+    left: -11.2%;
+    top: 40%;
+    color: #737373;
+}
+.foot5{
+    position: relative;
+    left: -6.2%;
+    top: 40%;
+    color: #737373;
+}
+
+.lang{
+    height: 50px;
+    position: relative;
+    left: -28%;
+    top:60% ;
+    width: 122px;
+    text-align: center;
+    color: #737373;
+}

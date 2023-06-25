@@ -68,6 +68,7 @@ header{
     font-size: 0.85rem;
     height: 32px;
     width: 76px;
+    cursor: pointer;
 
 }
 .signin-btn{
@@ -121,12 +122,12 @@ header{
     color: #ffff;
 }
 
-.home-content button{
+.home-content button {
     height: 56px;
     width: 194px;
     margin: 0 0 0 8px;
     padding: 12px 24px;
-    color: white;
+    color: rgb(255, 255, 255);
     background-color: rgba(229, 09, 20, 1);
     border: none;
     border-radius: 5px;
@@ -134,7 +135,9 @@ header{
     font-size: 1.5rem;
     margin-bottom: 5px;
     position: relative;
+    text-decoration: none;
     top: 4px;
+    cursor: pointer;
 
 
 }
