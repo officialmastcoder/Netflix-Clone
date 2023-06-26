@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+.navbar1{
+    display: flex;
+    width: 100vw;
+    height: 91px;
+    border-bottom: 1px solid rgba(61, 61, 61, 0.192);
+}
+
+.header-data span a{
+    color: red;
+    font-size: 50px;
+    padding: 0 0 0 44;
+    margin-left: 20px;
+    /* margin-top: PX; */
+    text-transform: capitalize;
+    font-weight: 700;
+    width: 100vw;
+    position: relative;
+    top: 12%;
+    text-decoration: none;
+    
+
+
+}
+.signin-btn{
+    width: 100vw;
+    height: 91px;
+}
+.header-data .signin-btn a{
+    position: relative;
+    left: 86rem;
+    bottom: 12%;
+    color: #333333;
+    text-decoration: none;
+    font-size: 16.5px;
+}
+
+.regcontainter{
+    display: grid;
+    width: 500px;
+    height: 550px;
+    
+}
+
+.reg-data{
+    position: relative;
+    left: 45rem;
+    top: 7rem;
+    /* width: 280px;
+    height: 500; */
+    
+    
+}
+button{
+    position: relative;
+    left: 40%;
+    bottom: 5.8rem;
+    padding: 20px 48px;
+    background-color: #E50914;
+    height: 65px;
+    width: 340px;
+    border: none;
+    font-weight: 600;
+    border-radius: 5px;
+    color: #ffff;
+    font-size: 24px;
+    cursor: pointer;
+   
+}
+.img{
+    height: 210px;
+    width: 280px;
+}
+.reg-data img{
+    height: 90px;
+    width: 280px;
+
+}
+.reg-data span{
+    text-align: center;
+    position: relative;
+    bottom: 5rem;
+    left: 6rem;
+    font-size: 13px;
+}
+
+.reg-data h1{
+    text-align: center;
+    position: relative;
+    bottom: 5rem;
+    left: -6.5rem;
+    color: #333333;
+    
+}
+
+.reg-bottom {
+    font-size: 18px;
+    color: #333333;
+    position: relative;
+    bottom: 4rem;
+    right: 6.3rem;
+    text-align: center;
+}
+
+.blue{
+    color: blue;
+}
+
+.footer{
+    height: 242px;
+    width: 100vw;
+    background-color: rgba(82, 82, 82, 0.11);
+    position: relative;
+    top: -89%;
+    /* display: flex; */
+    
+    
+}
+
+.footer-data{
+    position: relative;
+    left: 5%;
+    top: 10%;
+    color: #737373;
+}
+
+
+
+.foot{
+    position: relative;
+    left: 5%;
+    top: 25%;
+    color: #737373;
+}
+
+.foot1{
+    position: relative;
+    left: 8%;
+    top: 25%;
+    color: #737373;
+}
+.foot2{
+    position: relative;
+    left: 12%;
+    top: 25%;
+    color: #737373;
+}
+.foot3{
+    position: relative;
+    left: 16%;
+    top: 25%;
+    color: #737373;
+}
+.foot4{
+    position: relative;
+    left: -11%;
+    top: 40%;
+    color: #737373;
+}
+.foot5{
+    position: relative;
+    left: -6.2%;
+    top: 40%;
+    color: #737373;
+}
+
+.lang{
+    height: 50px;
+    position: relative;
+    left: -28%;
+    top:60% ;
+    width: 122px;
+    text-align: center;
+    color: #737373;
+}

@@ -34,7 +34,7 @@ header{
     text-align: center;
 }
 
-.logo{
+.logo a{
     color: red;
     font-weight: 900;
     font-size: 3rem;
@@ -42,6 +42,7 @@ header{
     width: 24px;
     font-family: 'Franklin Gothic Medium';
     margin-left: 300px;
+    text-decoration: none;
 
 }
 
