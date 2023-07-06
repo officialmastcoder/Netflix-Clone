@@ -1,0 +1,261 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333333;
+}
+
+/* =================================Header==================================== */
+
+:root {
+  --primary-color: #737373;
+  --secondary-color: #333333;
+}
+
+body {
+  overflow-x: hidden;
+  background-size: cover;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.navbar1 {
+  display: flex;
+  width: 1700px;
+  height: 91px;
+  border-bottom: 1px solid rgba(61, 61, 61, 0.192);
+}
+
+.header-data span svg {
+  fill: red;
+  font-size: px;
+  padding: 0 0 0 44;
+  margin-left: 20px;
+  margin-top: PX;
+  text-transform: capitalize;
+  font-weight: 700;
+  /* width: 1700px; */
+  position: relative;
+  top: 24%;
+  text-decoration: none;
+  height: 45px;
+  width: 167px;
+}
+
+.signin-btn {
+  width: 100vw;
+  height: 91px;
+}
+.header-data .signin-btn a {
+  position: relative;
+  left: 86rem;
+  top: 5%;
+  color: #ff0000;
+  text-decoration: none;
+  font-size: 19.5px;
+}
+
+.close-button {
+  position: absolute;
+  right: 50px;
+  top: 25px;
+  cursor: pointer;
+}
+
+/* ====================================BODY====================================== */
+
+.main-container {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  background-color: transparent;
+}
+
+.main-container-data {
+  height: 578px;
+  width: 504px;
+  margin: 0 428px;
+  padding: 80px 32px 0;
+  display: flex;
+  justify-content: center;
+  display: grid;
+  position: relative;
+  left: 12rem;
+}
+
+.main-container-data .st {
+  position: relative;
+  top: 2rem;
+}
+
+.main-container-data .stt {
+  position: relative;
+  left: 4rem;
+  bottom: 15px;
+  font-size: 15px;
+  color: #333333;
+}
+
+.main-container-data .pt {
+  position: relative;
+  top: 2rem;
+}
+
+.main-container-data .ptt {
+  position: relative;
+  bottom: 0.7rem;
+  left: 4rem;
+  font-size: 15px;
+  color: #333333;
+}
+
+.main-container-data .ct {
+  position: relative;
+  top: 2rem;
+}
+
+.main-container-data .ctt {
+  position: relative;
+  bottom: 0.8rem;
+  left: 4rem;
+  font-size: 15px;
+  color: #333333;
+}
+
+.main-container-data .gt {
+  position: relative;
+  top: 2rem;
+}
+
+.main-container-data .gtt {
+  position: relative;
+  bottom: 1.2rem;
+  left: 4rem;
+  font-size: 15px;
+  color: #333333;
+}
+.main-container .first {
+  position: relative;
+  display: table-column;
+  left: 4rem;
+  top: 20px;
+  line-height: 10px;
+}
+
+.main-container .st {
+  position: relative;
+  top: 75px;
+}
+
+.main-container .pt {
+  position: relative;
+  top: -0.1px;
+}
+
+.main-container .sttt {
+  position: relative;
+  top: 5rem;
+  left: 4rem;
+}
+.main-container .stt {
+  display: table-column;
+  line-height: px;
+  position: relative;
+  top: 4.5rem;
+  column-gap: -10px;
+  font-size: 14px;
+}
+
+.main-container .gtt {
+  position: relative;
+  line-height: 6px;
+}
+.main-container-data .button {
+  height: 90px;
+  width: 436px;
+  position: relative;
+  top: 8rem;
+  background-color: #f8f8f8;
+  font-weight: 400;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 14px;
+  color: #333333;
+  border: none;
+  box-shadow: 0 1px 1px rgba(0, 0, 0, 0.25);
+  cursor: pointer;
+  user-select: none;
+  text-align: center;
+  text-decoration: none;
+  text-transform: none;
+  text-align: center;
+}
+
+/* ===================================FOOTER===================================== */
+
+.footer {
+  height: 242px;
+  width: 1745px;
+  background-color: rgba(82, 82, 82, 0.11);
+  position: relative;
+}
+
+.footer .contact {
+  position: relative;
+  left: 4.5%;
+  top: 10%;
+  color: #737373;
+}
+
+.foot {
+  position: relative;
+  right: 10.3%;
+  top: 25%;
+  color: #737373;
+}
+
+.foot1 {
+  position: relative;
+  right: 5%;
+  top: 25%;
+  color: #737373;
+}
+.foot2 {
+  position: relative;
+
+  top: 25%;
+  color: #737373;
+}
+.foot3 {
+  position: relative;
+  left: 5%;
+  top: 25%;
+  color: #737373;
+}
+.foot4 {
+  position: relative;
+  right: 27%;
+  top: 40%;
+  color: #737373;
+}
+.foot5 {
+  position: relative;
+  right: 23%;
+  top: 40%;
+  color: #737373;
+}
+
+.lang {
+  height: 50px;
+  position: relative;
+  right: 43%;
+  top: 60%;
+  width: 122px;
+  text-align: center;
+  color: #737373;
+}

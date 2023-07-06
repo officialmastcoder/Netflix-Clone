@@ -1,0 +1,74 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+body{
+    overflow-x: hidden;
+    overflow-y: hidden;
+    display: flex;
+}
+.maincontainer{
+    height: 900px;
+    width: 1900px;
+    background-color: #131313;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.maincontainer h1{
+    color: #fff;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+    bottom: 22rem;
+    font-size: 4rem;
+    left: 23rem;
+}
+
+.you{
+    height: 188px;
+    width: 188px;
+    border: 6px solid #1a1a1a;
+    position: relative;
+    right: 6rem;
+    bottom: 12rem;
+}
+
+.kids{
+    height: 188px;
+    width: 188px;
+    border: 6px solid #1a1a1a;
+    position: relative;
+    right: 11rem;
+    bottom: 12rem;
+}
+
+.youtxt{
+    font-size: 24px;
+    color: #808080;
+    position: relative;
+    bottom: 4.5rem;
+    right: 15rem;
+
+}
+
+.kidstxt{
+    font-size: 24px;
+    color: #808080;
+    position: relative;
+   bottom: 4.5rem;
+    right: 19.5rem;
+    font-weight: 520;
+
+}

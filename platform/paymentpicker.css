@@ -1,0 +1,282 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:root {
+    --primary-color: #737373;
+    --secondary-color: #333333;
+  }
+  
+
+.navbar1{
+    display: flex;
+    width: 1700px;
+    height: 91px;
+    border-bottom: 1px solid rgba(61, 61, 61, 0.192);
+}
+
+.header-data span svg {
+    fill: red;
+    font-size: px;
+    padding: 0 0 0 44;
+    margin-left: 20px;
+    margin-top: PX;
+    text-transform: capitalize;
+    font-weight: 700;
+    /* width: 1700px; */
+    position: relative;
+    top: 24%;
+    text-decoration: none;
+    height: 45px;
+    width: 167px;
+    
+
+
+}
+
+.signin-btn{
+    width: 100vw;
+    height: 91px;
+}
+.header-data .signin-btn a{
+    position: relative;
+    left: 86rem;
+    top: 5%;
+    color: #333333;
+    text-decoration: none;
+    font-size: 16.5px;
+}
+
+
+/* ===============================Body============================ */
+
+
+.main-container{
+    height: 288px;
+    width: 500px;
+    position: relative;
+    left: 37%;
+    top: 65px;
+    /* background-color: #333333; */
+}
+
+
+.main-container span img{
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    left: 50%;
+}
+
+.main-container .steps-data{
+    color: var(--secondary-color) ;
+    position: absolute;
+    top: 25%;
+    left: 45%;
+}
+
+.main-container h1{
+    color: var(--secondary-color);
+    position: absolute;
+    top: 35%;
+    left: 25%;
+}
+
+.main-container .encryption{
+    color: var(--secondary-color);
+    text-align: center;
+    position: absolute;
+    top: 53%;
+    left: 12%;
+    font-weight: 200;
+
+}
+.main-container .encrypt{
+    color: var(--secondary-color);
+    text-align: center;
+    position: absolute;
+    top: 70%;
+    left: 34%;
+
+}
+
+
+.end-to-end-encrypted{
+    position: relative;
+    height: 16px;
+    width: 500px;
+    top: 15.8rem;
+    
+    left: 35px;
+    
+}
+.end-to-end-encrypted span{
+    font-size: 13px;
+    color: var(--secondary-color);
+    font-weight: 200;
+    position: absolute;
+    right: 1rem;
+}
+.end-to-end-encrypted svg{
+    height: 16px;
+    width: 16px;
+    font-size: 13px;
+    color: var(--secondary-color);
+    position: absolute;
+    right: 0;
+
+}
+
+
+.creditordebit{
+    height: 64px;
+    width: 504px;
+    border: 2px solid #7e7e7e34;
+    border-radius: 5px;
+    background-color: #fff;
+    position: absolute;
+    top: 17rem;
+    left: 2rem;
+    cursor: pointer;
+}
+
+.creditordebit .card{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    color: var(--secondary-color);
+    font-weight: 200;
+    font-size: 16px;
+}
+
+
+.creditordebit img{
+    margin-left: 12px;
+    position: relative;
+    left: 18px;
+}
+
+.creditordebit svg{
+    color: var(--secondary-color);
+    /* background-color: red; */
+    
+    position: absolute;
+    right: 1.3rem;
+}
+
+.creditordebit-sec{
+    height: 64px;
+    width: 504px;
+    border: 2px solid #7e7e7e34;
+    background-color: #fff;
+    border-radius: 5px;
+    position: absolute;
+    top: 22rem;
+    left: 2rem;
+    cursor: pointer;
+}
+.creditordebit-sec .card{
+    position: absolute;
+    left: 10px;
+    bottom: 20px;
+    color: var(--secondary-color);
+    font-weight: 200;
+    font-size: 16px;
+}
+
+.creditordebit-sec img{
+    margin-left: 12px;
+    position: relative;
+    width: 39px;
+    height: 25px;
+}
+
+.creditordebit-sec svg{
+    color: var(--secondary-color);
+    /* background-color: red; */
+    
+    position: absolute;
+    right: 1.3rem;
+}
+
+
+
+
+
+
+
+
+/* footer */
+
+.footer{
+    height: 242px;
+    width: 1745px;
+    background-color: rgba(82, 82, 82, 0.11);
+    position: relative;
+    
+    top: 15rem;
+    /* display: flex; */
+    
+    
+}
+
+.footer .contact{
+    position: relative;
+    left: 4.5%;
+    top: 10%;
+    color: #737373;
+}
+
+
+
+.foot{
+    position: relative;
+    right: 10.3%;
+    top: 25%;
+    color: #737373;
+}
+
+.foot1{
+    position: relative;
+    right: 5%;
+    top: 25%;
+    color: #737373;
+}
+.foot2{
+    position: relative;
+    
+    top: 25%;
+    color: #737373;
+}
+.foot3{
+    position: relative;
+    left: 5%;
+    top: 25%;
+    color: #737373;
+}
+.foot4{
+    position: relative;
+    right: 27%;
+    top: 40%;
+    color: #737373;
+}
+.foot5{
+    position: relative;
+    right: 23%;
+    top: 40%;
+    color: #737373;
+}
+
+.lang{
+    height: 50px;
+    position: relative;
+    right: 43%;
+    top:60% ;
+    width: 122px;
+    text-align: center;
+    color: #737373;
+}

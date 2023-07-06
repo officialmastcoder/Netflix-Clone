@@ -11,8 +11,15 @@
 body{
 background-color: black;
 width: 100vw;
+overflow-x: hidden;
 
 }
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+
 header{
     background-image: url(/assets/hero-section.jpg);
     height: 700px;
@@ -27,19 +34,25 @@ header{
     background-color: rgb(0, 0, 0, 0.75) ;
 }
 
-
+.hidden {
+    display: none;
+    color: #ffff;
+    background-color: #ffff;
+  }
+  
 
 .navbar option{
     background-color: black;
     text-align: center;
 }
 
-.logo a{
-    color: red;
-    font-weight: 900;
-    font-size: 3rem;
-    height: 24px;
-    width: 24px;
+.logo a svg{
+    fill: red;
+    position: relative;
+    top: 10px;
+    
+    height: 45px;
+    width: 167px;
     font-family: 'Franklin Gothic Medium';
     margin-left: 300px;
     text-decoration: none;
@@ -55,7 +68,7 @@ header{
     background-color: transparent;
     color: #ffff;
     font-weight: 700px;
-    padding: 6px 36px;
+    /* padding: 6px 36px; */
     line-height: 5px;
 
 
@@ -349,4 +362,164 @@ header{
     color: #ffff;
     font-size: 3rem;
     padding: 20px;
+}
+
+.data-faqs button {
+    width: 1008px;
+    height: 84px;
+    padding: 24px;
+    
+
+}
+
+.data-faqs button{
+    font-size: 24px;
+    color: #ffff;
+    background-color: rgb(45,45,45);
+    margin-bottom: 10px;
+   border: none;
+   cursor: pointer;
+   
+
+}
+
+.data-faqs button:hover{
+    background-color: #8c8c8c88;
+}
+
+
+button span{
+    position: absolute;
+    left: 25rem;
+}
+
+button svg{
+    position: relative;
+    left: 27rem;
+}
+
+
+
+.abovefooter{
+    height:200px;
+    
+    display: flex;
+    position: relative;
+    left: 8rem;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.abovefooter span{
+    font-size: 20px;
+    color: #ffff;
+    position: relative;
+    bottom: 50px;
+    left: 180px;
+
+}
+
+.abovefooter input{
+    height: 56px;
+    width: 377px;
+    padding: 24px 16px 8px;
+    line-height: 1.5rem;
+    color: transparent;
+    background-color: transparent;
+    border: none;
+    border: 2px solid #a7a0a0;
+    border-radius: 5px;
+    text-align: left;
+    padding: 25px;
+    color: #ffff;
+    position: relative;
+    right: 26rem;
+}
+
+.abovefooter button{
+    height: 56px;
+    width: 194px;
+    margin: 0 0 0 8px;
+    padding: 12px 24px;
+    color: rgb(255, 255, 255);
+    background-color: rgba(229, 09, 20, 1);
+    border: none;
+    border-radius: 5px;
+    font-weight: 400;
+    font-size: 1.3rem;
+    margin-bottom: 5px;
+    position: relative;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    right: 26rem;
+    bottom: -3px;
+}
+
+.divider{
+    border-top: 7px solid #a7a0a06e;
+}
+
+.footdata span{
+    font-size: 16px;
+    color: #8c8c8c;
+    position: relative;
+    left: 13.3rem;
+    top: 3rem;
+}
+
+footer {
+  height: 310px;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 182px 0 182px;
+}
+
+.footer div span{
+    font-size: 16px;
+    
+}
+
+.columns {
+  width: 25%;
+  list-style: none;
+  position: relative;
+  left: 0;
+  color: #8c8c8c;
+  top: 4rem;
+  text-decoration: underline;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+li {
+  padding: 10px;
+  
+  
+}
+
+footer .language{
+    height: 32px;
+    width: 125px;
+    
+    margin-top: 50px;
+    text-align: center;
+    background-color: transparent;
+    color: #ffff;
+    font-weight: 700px;
+    /* padding: 6px 36px; */
+    /* line-height: 5px; */
+    
+    border-radius: 5px;
+}
+
+footer span{
+    font-size: 13px;
+    color: #8c8c8c;
+    position: relative;
+    top: 6.5rem;
+    right: 6.5rem;
 }

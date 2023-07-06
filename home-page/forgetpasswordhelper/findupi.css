@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.close-button{
+    position: absolute;
+    right: 50px;
+    top: 25px;
+    cursor: pointer;
+    
+
+}
+
+
+.main-container{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    background-color: transparent;
+
+}
+
+
+
+
+
+.main-container-data{
+    height: 578px;
+    width: 504px;
+    margin: 0 428px;
+    padding: 80px 32px 0;
+    display: flex;
+    justify-content: center;
+    display: grid;
+    position: relative;
+    left: 12rem;
+}
+
+.main-container-data .st{
+    position: relative;
+    top: 2rem;
+}
+
+.main-container-data .stt{
+    position: relative;
+    left: 4rem;
+    bottom: 15px;
+    font-size: 15px;
+    color: #333333;
+}
+
+.main-container-data .pt{
+    position: relative;
+    top: 2rem;
+}
+
+.main-container-data .ptt{
+    position: relative;
+    bottom: 0.7rem;
+    left: 4rem;
+    font-size: 15px;
+    color: #333333;
+}
+
+.main-container-data .ct{
+    position: relative;
+    top: 2rem;
+
+}
+
+.main-container-data .ctt{
+    position: relative;
+    bottom: 0.8rem;
+    left: 4rem;
+    font-size: 15px;
+    color: #333333;
+}
+
+.main-container-data .gt{
+    position: relative;
+    top: 2rem;
+}
+
+.main-container-data .gtt{
+    position: relative;
+    bottom: 1.2rem;
+    left: 4rem;
+    font-size: 15px;
+    color: #333333;
+
+}
+
+.main-container-data button{
+    height: 65px;
+    width: 440px;
+    position: relative;
+    top: 2rem;
+    background-color: #e50914;
+    font-weight: 400;
+    border-radius: 4px;
+    font-size: 24px;
+    color: #ffff;
+    border: none;
+    box-shadow: 0 1px 1px rgba(0,0,0,.25);
+    cursor: pointer;
+    user-select: none;
+    text-align: center;
+    text-decoration: none;
+    text-transform: none;
+
+}

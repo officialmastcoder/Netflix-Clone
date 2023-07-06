@@ -5,6 +5,13 @@
     font-family: Arial, Helvetica, sans-serif;
 
 }
+body {
+    overflow-x: hidden;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
 
 .navbar1{
     display: flex;
@@ -119,8 +126,12 @@ button{
     position: relative;
     bottom: 3rem;
     border-radius: 5px;
-    border: none;
-    border: 1px solid #6b6969;
+    border: 0;
+    border: 1px solid #b3b3b3;
+    border-radius: 2px;
+    padding: 10px 11px;
+    appearance: none;
+    color: #131212;
 }
 
 .blue{

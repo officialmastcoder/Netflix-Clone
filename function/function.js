@@ -3,5 +3,43 @@ function myfunction(){
 
 }
 function signout(){
-    "window.location.href='/registration/pass.html'";
+    // "window.location.href='/registration/pass.html'";
+    // window.location.href='/registration/pass.html';
+    window.location.href='/registration/plan.html';
+}
+
+
+// platform code
+// const redDiv =  document.getElementById("divcolour");
+
+// redDiv.addEventListener("click", ()=>{
+// redDiv.style.backgroundColor = "red";
+// return;
+// });
+
+
+// =================Credits Option page Code================================================
+
+// Detect scroll wheel movement
+
+
+
+
+function setElementHeight(element, height) {
+  element.style.height = height;
+}
+const myElement = document.getElementById('price-649');
+setElementHeight(price-649, '481px');
+
+
+function changeStyle() {
+  var element = document.getElementById("price-649");
+  element.style.height = "481px";
+  element.style.boxShadow="rgba(0, 0, 0, 0.1) 0px 4px 8px 0px, rgba(0, 0, 0, 0.1) 0px 0px 2px 0px, rgba(128, 128, 128, 0.7) 0px 0px 0px 1px;";
+  element.style.transition= "margin 250ms ease-in-out 0s, box-shadow 250ms ease-in-out 0s, border-color 250ms ease-in-out 0s;"
+}
+
+
+function upiwaitingbutton() {
+  window.location.href="/maincontent/content.html";
 }

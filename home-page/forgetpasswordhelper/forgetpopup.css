@@ -1,0 +1,335 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+:root {
+    --primary-color: #737373;
+    --secondary-color: #333333;
+  }
+
+  body {
+    overflow-x: hidden;
+    background-image: url(/assets/forgetpass.jpg);
+    
+    background-size: cover;
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+}
+  
+  
+
+.navbar1{
+    display: flex;
+    width: 1700px;
+    height: 91px;
+    border-bottom: 1px solid rgba(61, 61, 61, 0.192);
+    
+}
+
+.header-data span svg {
+    fill: red;
+    font-size: px;
+    padding: 0 0 0 44;
+    margin-left: 20px;
+    margin-top: PX;
+    text-transform: capitalize;
+    font-weight: 700;
+    /* width: 1700px; */
+    position: relative;
+    top: 24%;
+    text-decoration: none;
+    height: 45px;
+    width: 167px;
+    
+
+
+}
+
+.signin-btn{
+    width: 100vw;
+    height: 91px;
+}
+.header-data .signin-btn a{
+    position: relative;
+    left: 86rem;
+    top: 5%;
+    color: #ff0000;
+    text-decoration: none;
+    font-size: 19.5px;
+}
+
+
+/* ===============================Body============================ */
+
+
+.firstname {
+    height: 44px;
+    width: 380px;
+    margin: 20px 0;
+    border: 1px solid #b3b3b3;
+    border-radius: 2px;
+    padding: 10px 11px;
+    appearance: none;
+    color: #131212;
+}
+
+.c2{
+    position: relative;
+    top: 20px;
+    color: #808080;
+}
+.l2{
+    color: #808080;
+}
+
+.n2{
+    width: 105px;
+    height: 37px;
+    color: #fff;
+    background-image: linear-gradient(180deg,#0080ff,#0272e2);
+    border: 0;
+    margin: 6.5px 6.5px 6.5px 0;
+    font-size: 13px;
+    box-shadow: inset 0 1px 0 hsla(0,0%,100%,.3), 0 1px 0 rgba(0,0,0,.55);
+}
+
+.n5{
+    width: 105px;
+    height: 37px;
+    color: #131212;
+    border: 0;
+    margin: 6.5px 6.5px 6.5px 0;
+    font-size: 13px;
+    box-shadow: 0 1px 0 rgba(0,0,0,.2);
+    background-image: linear-gradient(180deg,#e6e6e6,#ddd);
+}
+
+.b2{
+    position: relative;
+    top: 20px;
+    color: #808080;
+    
+}
+
+.e2{
+    font-size: 16px;
+    color: #333333;
+    position: relative;
+    top: 20px;
+}
+
+.e2 a{
+    text-decoration: none;
+}
+
+.creditcardnum{
+    height: 44px;
+    width: 380px;
+    margin: 20px 0;
+    border: 1px solid #b3b3b3;
+    border-radius: 2px;
+    padding: 10px 11px;
+    appearance: none;
+    color: #131212;
+}
+
+.lastname{
+    height: 44px;
+    width: 380px;
+    margin: 20px 0;
+    border: 1px solid #b3b3b3;
+    border-radius: 2px;
+    padding: 10px 11px;
+    appearance: none;
+    color: #131212;
+
+}
+
+
+
+
+
+.main-container{
+    height: 280px;
+    width: 460px;
+    background-color: #f3f3f3;
+    position: relative;
+    left: 35%;
+    padding: 40px;
+}
+
+.main-container h1{
+    font-size: 24px;
+    margin: 0 0 10px;
+    color: var(--secondary-color);
+    font-weight: 600;
+}
+
+.main-container .belowh1{
+    font-size: 16px;
+    margin: 16px 0;
+    color: #333333;
+}
+
+.main-container .phone{
+    position: relative;
+    top: 35px;
+    right: 18.3rem;
+    height: 25px;
+    width: 25px;
+
+}
+.main-container .email{
+    position: relative;
+    top: 40px;
+    right: 1.3rem;
+    height: 25px;
+    width: 25px;
+
+}
+
+.main-container .phonenum{
+    position: relative;
+    padding: 6px 0;
+    left: 65px;
+    color: var(--secondary-color);
+}
+
+input[type='radio'] {
+    accent-color: #0080ff;
+  }
+  
+.main-container .emailid{
+    position: relative;
+    padding: 6px 0;
+    top: 30px;
+    right: 10px;
+    color: var(--secondary-color);
+}
+
+.inputmail span {
+    padding: 16px 0;
+    position: relative;
+    top: 60px;
+}
+
+.inputmail input{
+    height: 44px;
+    width: 380px;
+    padding: 10px 11px;
+    position: relative;
+    top: 75px;
+    border-radius: 2px;
+    appearance: none;
+    border: 1px solid #b3b3b3;
+    font-size: 16px;
+
+}
+
+
+.inputmail input ::placeholder{
+    font-weight: 700;
+}
+
+.main-container .f2{
+    color: #0080ff;
+    position: relative;
+    top: 9rem;
+
+}
+
+
+
+.main-container .f2:hover{
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+.t2{
+    color: #999999;
+    position: relative;
+    left: 35%;
+    top: 10px;
+    
+}
+
+.t2 a{
+    color: #999999;
+}
+/* footer */
+
+.footer{
+    height: 242px;
+    width: 1745px;
+    background-color: rgba(82, 82, 82, 0.11);
+    position: relative;
+    
+    top: 15rem;
+    /* display: flex; */
+    
+    
+}
+
+.footer .contact{
+    position: relative;
+    left: 4.5%;
+    top: 10%;
+    color: #737373;
+}
+
+
+
+.foot{
+    position: relative;
+    right: 10.3%;
+    top: 25%;
+    color: #737373;
+}
+
+.foot1{
+    position: relative;
+    right: 5%;
+    top: 25%;
+    color: #737373;
+}
+.foot2{
+    position: relative;
+    
+    top: 25%;
+    color: #737373;
+}
+.foot3{
+    position: relative;
+    left: 5%;
+    top: 25%;
+    color: #737373;
+}
+.foot4{
+    position: relative;
+    right: 27%;
+    top: 40%;
+    color: #737373;
+}
+.foot5{
+    position: relative;
+    right: 23%;
+    top: 40%;
+    color: #737373;
+}
+
+.lang{
+    height: 50px;
+    position: relative;
+    right: 43%;
+    top:60% ;
+    width: 122px;
+    text-align: center;
+    color: #737373;
+}
