@@ -113,3 +113,24 @@ function replaceSVG() {
 }
  // Add an event listener to the video element
 videoElement.addEventListener("ended", replaceSVG);
+
+
+
+//========================header Black on Scroll================================================
+
+
+
+
+//======================Moreinfo button================================================
+
+
+const button = document.getElementById('moreinfo');
+const div = document.getElementById('overlay');
+
+button.addEventListener('click', function() {
+  if (div.style.display === 'none') {
+    div.style.display = 'block';
+  } else {
+    div.style.display = 'none';
+  }
+});
