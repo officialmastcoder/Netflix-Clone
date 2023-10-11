@@ -9,27 +9,12 @@ function signout(){
 }
 
 
-// platform code
-// const redDiv =  document.getElementById("divcolour");
-
-// redDiv.addEventListener("click", ()=>{
-// redDiv.style.backgroundColor = "red";
-// return;
-// });
-
-
-// =================Credits Option page Code================================================
-
-// Detect scroll wheel movement
-
-
-
 
 function setElementHeight(element, height) {
   element.style.height = height;
 }
 const myElement = document.getElementById('price-649');
-setElementHeight(price-649, '481px');
+setElementHeight(-649, '481px');
 
 
 function changeStyle() {
@@ -43,3 +28,5 @@ function changeStyle() {
 function upiwaitingbutton() {
   window.location.href="/maincontent/content.html";
 }
+
+

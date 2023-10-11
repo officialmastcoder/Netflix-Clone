@@ -59,7 +59,7 @@ body {
 
 .reg-data{
     position: relative;
-    left: 45rem;
+    left: 50rem;
     top: 1rem;
     /* width: 280px;
     height: 500; */
@@ -68,9 +68,7 @@ body {
 }
 button{
     position: relative;
-    left: 41.7%;
-    
-    bottom: 6.5rem;
+    bottom: 3.8rem;
     padding: 20px 48px;
     background-color: #E50914;
     height: 65px;
@@ -92,7 +90,7 @@ button{
     width: 50px;
     position: relative;
     bottom: 9.5rem;
-    left: 28%;
+    left: 26%;
     font-size: 50px;
     color:#E50914;
 }

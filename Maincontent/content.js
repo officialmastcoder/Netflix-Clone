@@ -12,9 +12,9 @@
 // setInterval(slideNext, 3000);
 
 
-function homeredirect() {
-    window.location.href="/home-page/index.html";
-}
+
+
+
 
 
 
@@ -134,3 +134,9 @@ button.addEventListener('click', function() {
     div.style.display = 'none';
   }
 });
+
+// home.js
+
+
+
+// ...

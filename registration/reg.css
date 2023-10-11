@@ -8,6 +8,8 @@
 
 body {
     overflow-x: hidden;
+    overflow-y: hidden;
+
   }
 
   ::-webkit-scrollbar {
@@ -59,7 +61,7 @@ body {
 
 .reg-data{
     position: relative;
-    left: 45rem;
+    left: 52rem;
     top: 7rem;
     /* width: 280px;
     height: 500; */
@@ -68,8 +70,8 @@ body {
 }
 button{
     position: relative;
-    left: 40%;
-    bottom: 5.8rem;
+    left: 0%;
+    bottom: 2rem;
     padding: 20px 48px;
     background-color: #E50914;
     height: 65px;
@@ -126,7 +128,7 @@ button{
     width: 100vw;
     background-color: rgba(82, 82, 82, 0.11);
     position: relative;
-    top: -89%;
+    bottom: -4.8rem;
     /* display: flex; */
     
     

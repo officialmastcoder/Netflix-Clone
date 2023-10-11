@@ -36,7 +36,7 @@
         </select>
 
         <div class="signin-btn">
-          <button
+          <button id=""
             onclick="window.location.href='/signin-page/signin.html';"
             class="signin"
           >
@@ -52,9 +52,12 @@
           Ready to watch? Enter your email to create or restart your membership.
         </h3>
 
-        <input type="text" placeholder="Email Address" required />
-        <button onclick="window.location.href='/registration/reg.html';">
+        <input type="text" id="homeinputBox" value="" placeholder="Email Address" required />
+        <button id="homeBtn" >
           Get Started >
+        </button>
+        <button id="finished" class="finished">
+          Finish Sign Up >
         </button>
       </div>
     </header>
@@ -84,7 +87,7 @@
             <span>Downloading...</span>
           </div>
         </div>
-        <img src="/assets/mobile-0819.jpg" alt="mobile" />
+        <img class="mobimgg" src="/assets/mobile-0819.jpg" alt="mobile" />
         <h2>Download your shows <br />to watch offline</h2>
         <p>Save your favourites easily and always have something to watch.</p>
       </div>
@@ -137,7 +140,7 @@
 
       <div class="abovefooter">
         <span>Ready to watch? Enter your email to create or restart your membership.</span>
-        <input type="text" placeholder="Email Address" required />
+        <input type="text" id="homeinputBox" placeholder="Email Address" required />
         <button onclick="window.location.href='/registration/reg.html';"> Get Started ></button>
       </div>
     </div>
@@ -150,25 +153,32 @@
 
     <footer>
       
-      <ul class="columns">
+      <ul class="columns S">
         <li>FAQ</li>
         <li>Investor Relations</li>
         <li>Privacy</li>
         <li>Speed Test</li>
+        <li>Media Centre</li>
+        <li>Terms Of Use</li>
+        <li>Contact Us</li>
       </ul>
-      <ul class="columns">
+      <ul class="columns F">
         <li>Help Centre</li>
         <li>Jobs</li>
         <li>Cookies Preferences</li>
         <li>Legal Notices</li>
-      </ul>
-      <ul class="columns">
         <li>Account</li>
         <li>Ways To Watch</li>
         <li>Corporate Information</li>
         <li>Only On Netflix</li>
       </ul>
-      <ul class="columns">
+      <ul class="columns c">
+        <li>Account</li>
+        <li>Ways To Watch</li>
+        <li>Corporate Information</li>
+        <li>Only On Netflix</li>
+      </ul>
+      <ul class="columns c">
         <li>Media Centre</li>
         <li>Terms Of Use</li>
         <li>Contact Us</li>
@@ -183,9 +193,13 @@
         </option>
       </select>
 
-      <span>Netflix India</span>
+      <span id="india">Netflix India</span>
     </footer>
     
+    <script type="module" src="../All_JS_File/app.js"></script>
+    <script type="module" src="../All_JS_File/pass.js"></script>
+<script type="module" src="../All_JS_File/auth.js"></script>
+
     
   </body>
 </html>

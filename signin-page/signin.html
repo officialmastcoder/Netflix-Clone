@@ -5,7 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="signin.css">
     <title>Login</title>
-</head>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.0.2/firebase-auth.js"></script></head>
 <body>
     <header>
         <div class="navbar">
@@ -18,15 +19,15 @@
     <div class="login-box">
         <div class="form-data">
             <h2>Sign In</h2>
-            <form action="/function.js">
+            <form id="loginForm">
                 <!-- <label for="Username">Username</label> -->
-                <input type="text" name="Username" placeholder="Email Or Phone number" class="forminput inputbox">
+                <input type="text" id="email" name="Username" placeholder="Email Or Phone number" class="forminput inputbox">
                 <br>
                 <!-- <label for="Password">Password</label> -->
-                <input type="text" name="Password" placeholder="Password" class="forminput inputbox">
+                <input type="text" id="password" name="Password" placeholder="Password" class="forminput inputbox">
                 <br>
                 
-                <input type="Submit" class="btn forminput" name="signin"  style="text-align: center;">
+                <input type="Submit" id="" class="btn forminput" name="signin"  style="text-align: center;">
                 <!-- <label for="signin"> Sign in</label> -->
 
                 <input type="checkbox" name="rememberme" class="rememberme">
@@ -70,5 +71,10 @@
     </div>
 </header>
 <script src="/function/function.js"></script>
+<script type="module" src="../All_JS_File/signin.js"></script>
+<!-- <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script> -->
+<script type="module" src="../All_JS_File/auth.js"></script>
+
+
 </body>
 </html>

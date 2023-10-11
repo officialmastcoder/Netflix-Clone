@@ -11,6 +11,7 @@
 body{
 background-color: black;
 width: 100vw;
+height: 100vh;
 overflow-x: hidden;
 
 }
@@ -23,13 +24,17 @@ overflow-x: hidden;
 header{
     background-image: url(/assets/hero-section.jpg);
     height: 700px;
+    width: 100%;
 
     
 }
 
+
+
 .navbar{
     /* background-image: url(/assets/hero-section.jpg); */
     height: 700px;
+    width: 100%;
     display: flex;
     background-color: rgb(0, 0, 0, 0.75) ;
 }
@@ -99,6 +104,7 @@ header{
    position: relative;
     color: #ffff;
     bottom: 400px;
+    
 }
 
 .home-content h1{
@@ -154,6 +160,14 @@ header{
     cursor: pointer;
 
 
+}
+
+.home-content .finished{
+    position: relative;
+    text-align: center;
+    width: 14%;
+    display: none;
+    left: 42%;
 }
 
 .box1{
@@ -390,7 +404,7 @@ header{
 
 button span{
     position: absolute;
-    left: 25rem;
+    left: 30rem;
 }
 
 button svg{
@@ -522,4 +536,399 @@ footer span{
     position: relative;
     top: 6.5rem;
     right: 6.5rem;
+}
+
+
+@media (min-width: 360px)  and (max-width: 570px){
+   
+
+    body{
+        overflow-x: hidden;
+
+    }
+
+    
+    .navbar .nav-logo .logo svg{
+        width: 80px;
+        position: absolute;
+        right: 75%;
+    }
+
+    
+    .navbar .lang {
+        width: 60px;
+        font-size: 10px;
+        margin-left: 50%;
+    }
+    .navbar .signin-btn{
+        width: 20px;
+        height: 20px;
+        font-size: 10px;
+    }
+
+
+
+
+    header{
+        width: 100%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        
+    }
+
+    .home-content{
+        position: absolute;
+        left: 08%;
+        top: 35%;
+    }
+
+
+    .home-content h1{
+        width: 230%;
+        font-size: 24px;
+    }
+    .home-content p{
+        width: 230%;
+        font-size: small;
+    }
+    .home-content h3 {
+       
+        font-size: 15px;
+        width: 230%;
+
+    }
+
+    .home-content input{
+        width: 260%;
+        position: absolute;
+        left: -5%;
+    }
+
+    .home-content{
+       margin-top: -50px;
+        width: 32%;
+    }
+
+   .home-content button{
+    
+    position: relative;
+    top: 100%;
+    left: 33%;
+   }
+
+   .home-content .finished{
+    position: relative;
+    
+    width: 190%;
+    text-wrap: nowrap;
+    
+   
+    padding-right: 100px;
+    
+    right: 150px;
+}
+
+   .box1 h2{
+    font-size: 30px;
+    position: absolute;
+    top: 25px;
+    left: -100px;
+   }
+   .box1 p{
+    font-size: 18px;
+    width: 80%;
+    position: absolute;
+    top: 80px;
+    left: -130px;
+    text-align: center;
+   }
+
+   .box1 img{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    bottom: -80px;
+    left: -180px;
+    
+   }
+
+   .box1 video{
+    width: 400px;
+    height: 300px;
+    position: absolute;
+    bottom: -80px;
+    left: -180px;
+   }
+   .box1{
+    width: 50%;
+   }
+
+   /* Mobile Video Box 2 */
+
+   .mob-content h2{
+    position: relative;
+    top: -137%;
+    left: -7%;
+    font-size: 30px;
+    text-align: center;
+   }
+
+   .mob-content p{
+    position: relative;
+    top: -138%;
+    left: -7%;
+    font-size: 20px;
+    text-align: center;
+    margin-top: 10px;
+
+   }
+
+
+   .mob-content .mobimgg{
+   position: relative;
+   left: -50%;
+   bottom: 0;
+   transform: scale(60%);
+
+
+   }
+
+   .mini{
+    width: 60%;
+    height: 60px;
+    position: relative;
+    left: 7%;
+   }
+
+   .mini img{
+    height: 57px;
+    position: relative;
+    left: 5px;
+   }
+
+   .mini-data span{
+        padding-top: 10px;
+       font-size: 17px;
+   }
+
+   .mini .mini-data {
+    position: relative;
+    top: -53px;
+    left: 80px;
+   }
+
+
+   /* mac view box3 */
+   
+
+   .box3-content h2{
+        font-size: 30px;
+        position: absolute;
+        top: 20px;
+        left: -100px;
+   }
+   .box3-content p{
+        font-size: 20px;
+        position: absolute;
+        top: 70px;
+        left: -120px;
+        text-align: center;
+        width: 80%;
+   }
+
+   .mac{
+    position: absolute;
+    left: -170px;
+    height: 300px;
+    width: 400px;
+    bottom: -80px;
+   }
+   
+
+   .mac-video{
+    position: absolute;
+    left: -95px;
+    height: 400px;
+    width: 255px;
+    bottom: -80px;
+    
+   }
+
+
+   /* Box 4 children */
+
+   .mob1-content h2{
+    font-size: 25px;
+    text-align: center;
+    position: relative;
+    top: -300px;
+    left: 0;
+   }
+
+   .mob1-content p{
+    font-size: 18px;
+    text-align: center;
+    position: relative;
+    top: -290px;
+    left: 0;
+   }
+
+   .mob1-content img{
+    height: 300px;
+    width: 300px;
+    position: relative;
+    bottom: -150px;
+    left: 0;
+    margin-top: 10px;
+   }
+
+   /* FAQS */
+
+   .data-faqs h2{
+    font-size: 25px;
+   }
+
+   .data-faqs button{
+    width: 90%;
+    height: 10%;
+   }
+
+   .data-faqs span{
+    font-size: 15px;
+    position: absolute;
+    left: 30px;
+    display: grid;
+    justify-content: center;
+    /* text-align: center; */
+   }
+   .data-faqs button svg{
+    font-size: 15px;
+    position: relative;
+    left: 130px;
+   
+    /* text-align: center; */
+   }
+
+   /* Below Faqs */
+
+   .abovefooter span{
+    font-size: 17px;
+    text-align:center;
+    width: 90%;
+    /* margin: 20px; */
+    padding: 20px;
+    bottom: 120px;
+    position: absolute;
+    left: -120px;
+    
+
+   }
+
+   .abovefooter input{
+   
+    width: 80%;
+    /* margin: 20px; */
+    padding: 20px;
+    bottom: 70px;
+    position: absolute;
+    left: -100px;
+   }
+
+   .abovefooter button{
+    width: 80%;
+    /* margin: 20px; */
+    padding: 20px;
+    bottom: 0px;
+    position: absolute;
+    left: -105px;
+   }
+
+
+
+
+
+
+/* Footer */
+
+.footdata span{
+    position: relative;
+    top: 10px;
+    left: 30px;
+}
+
+footer{
+   
+    width: 100%;
+    height: 35
+    
+    
+    
+    
+    
+    
+    0px;
+    position: absolute;
+    left: -60%;
+    margin-top: 05px;
+   
+}
+
+footer .F {
+    width: 80%;
+    position: absolute;
+    margin-left: 100px;
+
+}
+footer .S  {
+    width: 80%;
+    
+    
+
+}
+footer .S  li{
+    position: relative;
+    left: -50px;
+    
+    
+
+}
+
+
+
+footer .F {
+    padding-left: 100px;
+    
+
+}
+
+footer select{
+    position: relative;
+    bottom: -15px;
+    left: 10px;
+    margin-left: 10px;
+    
+}
+
+footer #india{
+    position: relative;
+    bottom: 150px;
+   
+    
+
+}
+
+
+
+footer .columns li{
+   
+    /* margin-left: 20px; */
+    text-align: center;
+
+    
+}
+
+footer .c{
+    display: none;
+}
+
 }

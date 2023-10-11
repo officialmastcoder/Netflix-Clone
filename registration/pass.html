@@ -6,6 +6,12 @@
     <title>Set Password</title>
     <link rel="stylesheet" href="pass.css" />
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
+
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-auth.js"></script>
+   
+      
+     
+
   </head>
   <body>
     <header>
@@ -32,17 +38,20 @@
           We hate paperwork, too.
         </div>
         <div class="input-box">
-          <input type="text" placeholder="Email" /> <br />
-          <input type="password" placeholder="Add a Password" />
+          <form >
+            <input type="text" id="passInputBox" placeholder="Email" /> <br />
+          <input type="password" id="password" placeholder="Add a Password" />
+          </form>
         </div>
+        <button
+        id="createAccountBtn"
+          class="button"
+         
+        >
+          Next
+        </button>
       </div>
     </div>
-    <button
-      class="button"
-      onclick="window.location.href='/registration/plan.html';"
-    >
-      Next
-    </button>
 
     <div class="footer">
       <div class="footer-data">
@@ -65,5 +74,12 @@
         </option>
       </select>
     </div>
+
+    <script type="module" src="../All_JS_File/pass.js"></script>
+    <script type="module" src="../All_JS_File/app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/9.3.0/firebase-app.js"></script>
+<script type="module" src="../All_JS_File/auth.js"></script>
+
+      
   </body>
 </html>
