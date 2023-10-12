@@ -410,3 +410,55 @@ input[type="number"] {
     text-align: center;
     color: #737373;
 }
+
+
+@media (min-width: 360px)  and (max-width: 570px){
+    .upper-content{
+        position: absolute;
+        left: 20px;
+        top: 25%;
+    }
+
+    
+
+    form{
+        height: 100vh;
+        width: 100vw;
+    }
+
+    .cardnum{
+        width: 85%;
+        position: absolute;
+        right: 166%;
+        top: 20%;
+        border-radius: 5px;
+        
+    }
+
+    .lastname{
+        width: 85%;
+        position: absolute;
+        right: 166%;
+        top: 30%;
+        border-radius: 5px;
+    }
+
+    .final-btn{
+        width: 85%;
+        position: relative;
+        /* right: 216%; */
+        left: 20px;
+       
+        
+    }
+
+    .bottomdata{
+        position: absolute;
+        right: 108%;
+        width: 100%;
+        top: 40%;
+        
+
+    }
+    
+}

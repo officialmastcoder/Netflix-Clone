@@ -280,3 +280,61 @@
     text-align: center;
     color: #737373;
 }
+
+
+@media (min-width: 360px)  and (max-width: 570px){
+    .main-container{
+        position: relative;
+        left: -28%;
+        right: -50%;
+        
+    }
+    .encryption{
+        width: 90%;
+        font-size: 14px;
+    }
+
+    .creditordebit{
+        width: 68%;
+        position: relative;
+        left: 22%;
+        
+    }
+
+    .end-to-end-encrypted{
+        position: absolute;
+        right: 30%;
+        left: -10%;
+    }
+
+    .creditordebit-sec{
+        width: 68%;
+        position: absolute;
+        left: 22%;
+        margin-top: 5px;
+        
+    }
+
+    .creditordebit img{
+        margin: 0;
+        width: 30px;
+        position: relative;
+        left: 17%;
+        
+    }
+    .creditordebit-sec img{
+        margin: 0;
+        width: 30px;
+        position: relative;
+        left: 12%;
+        
+    }
+
+    .footer{
+        width: 100%;
+    }
+
+
+    
+
+}

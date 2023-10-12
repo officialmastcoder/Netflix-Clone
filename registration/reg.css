@@ -9,6 +9,7 @@
 body {
     overflow-x: hidden;
     overflow-y: hidden;
+    height: 100%;
 
   }
 
@@ -53,7 +54,7 @@ body {
 }
 
 .regcontainter{
-    display: grid;
+    /* display: grid; */
     width: 500px;
     height: 550px;
     
@@ -189,4 +190,22 @@ button{
     width: 122px;
     text-align: center;
     color: #737373;
+}
+
+@media (min-width: 360px)  and (max-width: 570px){
+    .reg-data{
+        position: relative;
+        left: 5%;
+        
+    }
+
+    .button{
+        width: 65%;
+    }
+
+    .footer{
+        width: 140%;
+    }
+
+    
 }

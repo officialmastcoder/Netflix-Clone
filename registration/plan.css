@@ -235,3 +235,15 @@ button{
     text-align: center;
     color: #737373;
 }
+
+
+@media (min-width: 360px)  and (max-width: 570px){
+    .reg-data{
+        position: relative;
+        left: 4%;
+    }
+
+    .button{
+        width: 65%;
+    }
+}

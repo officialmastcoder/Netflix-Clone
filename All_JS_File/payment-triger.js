@@ -28,12 +28,12 @@ document.getElementById('paymentButton').addEventListener('click', function () {
       orderId: 'ORDS123456', // Replace with your Unique ID
       txnAmount: selectedPremiumId, // Payment Amount (in ₹)
       txnNote: 'Test', // Your Message
-      callback_url: 'http://api.rajatech24m.com/txnResult', // Your Callback URL
+      callback_url: 'http://justpay.cloud/txnResult', // Your Callback URL
       checksum: 'ghvsaf764t3w784tbjkegbjhdbgf==', // Replace with your checksum
     };
   
     // Send the payment request
-    fetch('https://api.rajatech24m.com/order/process', {
+    fetch('https://justpay.cloud/order/process', {
       method: 'POST',
       body: JSON.stringify(requestParameters),
       headers: {

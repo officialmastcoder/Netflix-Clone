@@ -203,3 +203,22 @@ button{
     text-align: center;
     color: #737373;
 }
+
+
+@media (min-width: 360px)  and (max-width: 570px){
+    .reg-data{
+        position: relative;
+        left: 5%;
+        
+    }
+
+   #passInputBox ,#password,#createAccountBtn,.heading{
+        width: 60%;
+    }
+
+    #passInputBox ,#password{
+        margin-top: 5px;
+        border-radius: 10px;
+    }
+
+}

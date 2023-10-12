@@ -11,6 +11,9 @@
     />
     <script src="https://kit.fontawesome.com/2c57ec9cc3.js" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="https://assets.nflxext.com/us/ffe/siteui/common/icons/nficon2016.ico" type="image/x-icon">
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+     <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+
   </head>
   <body>
     <header>
@@ -36,31 +39,33 @@
     </div>
 
     
+       <div class="wrapper">
         <div class="price-change455">
-            <span class="monthly649 " id="pricechoosen">₹ 649</span> 
-            <span class="premium">Premium</span>
-            <button onclick="window.location.href='/platform/platform.html';">Change</button>
-        </div>
-        <div class="price-change">
-            <span class="monthly649">UPI AutoPay</span> 
-            <span class="premium" id="upiidofcustomer">anurag1.console@paytm</span>
-            <button onclick="window.location.href='/platform/upipayment.html';">Change</button>
-        </div>
+          <span class="monthly649 " id="pricechoosen">₹ 649</span> 
+          <span class="premium">Premium</span>
+          <button onclick="window.location.href='/platform/platform.html';">Change</button>
+      </div>
+      <div class="price-change">
+          <span class="monthly649">UPI AutoPay</span> 
+          <span class="premium" id="upiidofcustomer">anurag1.console@paytm</span>
+          <button onclick="window.location.href='/platform/upipayment.html';">Change</button>
+      </div>
 
-        <span class="bottom-data">
-            Any payment above ₹ 2000 shall need additional authentication.
-        </span>
-   
-        <p class="bottom-data-second"> 
-            By checking the checkbox below, you agree to our <a href="#">Terms of Use</a>, <a href="#">Privacy</a> <br> <a href="#">Statement</a>, and that you are over 18. Netflix will automatically continue your <br> membership and charge the membership fee (currently ₹ 649/month) <br>to your payment method until you cancel. You may cancel at any time to  <br>avoid future charges.
-        </p>
+      <span class="bottom-data">
+          Any payment above ₹ 2000 shall need additional authentication.
+      </span>
+ 
+      <p class="bottom-data-second"> 
+          By checking the checkbox below, you agree to our <a href="#">Terms of Use</a>, <a href="#">Privacy</a> <br> <a href="#">Statement</a>, and that you are over 18. Netflix will automatically continue your <br> membership and charge the membership fee (currently ₹ 649/month) <br>to your payment method until you cancel. You may cancel at any time to  <br>avoid future charges.
+      </p>
 
-        <input type="checkbox" placeholder="I Agree" class="checkbox">
-        <span class="checkbox-label">I Agree</span>
+      <input type="checkbox" placeholder="I Agree" class="checkbox">
+      <span class="checkbox-label">I Agree</span>
 
-        <button class="final-btn" id="paymentButton" >
-            Start Membership
-        </button>
+      <button class="final-btn" id="paymentButton" >
+          Start Membership
+      </button>
+       </div>
 
 
     <div class="footer">
@@ -88,5 +93,7 @@
     <script src="/function/function.js"></script>
     <script src="../../All_JS_File/conformpayment-cookies-retrive.js"></script>
     <script src="../../All_JS_File/payment-triger.js"></script>
+    <script src="../../All_JS_File/check_user_auth_redir_login_page.js"></script>
+
   </body>
 </html>

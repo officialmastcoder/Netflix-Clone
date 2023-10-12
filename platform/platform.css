@@ -859,3 +859,23 @@ table{
     text-align: center;
     color: #737373;
 }
+
+@media (min-width: 360px)  and (max-width: 570px){
+    .reg-data{
+        position: relative;
+        left: 0;
+    }
+
+    
+
+    .price-649{
+        display: flex;
+        flex-direction: column;
+        
+    }
+
+    .price-650{
+        display: flex;
+        flex-direction: column;
+    }
+}

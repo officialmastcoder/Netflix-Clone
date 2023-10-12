@@ -363,3 +363,28 @@ input[type='checkbox'] {
     text-align: center;
     color: #737373;
 }
+
+/* @media (min-width: 360px)  and (max-width: 570px){
+    .upper-content{
+        position: relative;
+        left: 0;
+    }
+
+    .price-change455{
+        position: relative;
+        left: 22px;
+        width: 55%;
+    }
+
+    .monthly649{
+        position: absolute;
+        top: 10px;
+        font-weight: 700;
+    }
+
+    .premium{
+        position: absolute;
+        left: -50px;
+       
+    }
+} */
