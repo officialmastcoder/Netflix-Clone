@@ -25,93 +25,45 @@ function generateUniqueOrderId() {
 }
 
 console.log("Your order Id " + generateUniqueOrderId());
-
-// Function to generate a checksum based on server-side logic
-async function generateChecksum(data, key) {
-  // Convert the data to a string
-  var paramsString = Object.keys(data)
-    .map(function(key) {
-      return key + '=' + data[key];
-    })
-    .join('|');
-
-  // Generate the salt
-  var salt = generateRandomString(4);
-
-  // Calculate the checksum using SHA-512
-  var checksum = await sha512(paramsString, key, salt);
-
-  return checksum;
-}
-
-// SHA-512 hashing function
-async function sha512(str, key, salt) {
-  var encoder = new TextEncoder();
-  var dataUint8 = encoder.encode(str);
-  var keyData = encoder.encode(key);
-  var importedKey = await crypto.subtle.importKey(
-    'raw',
-    keyData,
-    { name: 'HMAC', hash: 'SHA-512' },
-    false,
-    ['sign']
-  );
-  var signatureBuffer = await crypto.subtle.sign('HMAC', importedKey, dataUint8);
-  var signatureArray = Array.from(new Uint8Array(signatureBuffer));
-  var signatureHex = signatureArray.map(byte => byte.toString(16).padStart(2, '0')).join('');
-  var checksum = signatureHex + salt;
-  return checksum;
-}
-
-// Function to generate a random string
-function generateRandomString(length) {
-  var characters = '9876543210ZYXWVUTSRQPONMLKJIHGFEDCBAabcdefghijklmnopqrstuvwxyz!@#$_&';
-  characters += 'zyxwvutsrqponmlkjihgfedcbaABCDEFGHIJKLMNOPQRSTUVWXYZ';
-  characters += '1234567890!@#$%^&*()_+-=[]{}|;:,.<>?';
-
-  var characterCount = characters.length;
-  var randomString = '';
-
-  for (var i = 0; i < length; i++) {
-    randomString += characters.charAt(Math.floor(Math.random() * characterCount));
-  }
-
-  return randomString;
-}
-
+let orderid = generateUniqueOrderId();
 // parameter to generate checksum 
 var data = {
+  upifast_secret: 'nezCqllWZN',
+  gateway_auth_key: 'test_token_new',
   upiuid: 'paytmqr2810050501011vjmw66h68iw@paytm',
   token: '7e21e9-785d8c-c7eb40-19df3f-6034f0',
-  orderId: generateUniqueOrderId(),
+  orderId: orderid,
   txnAmount: Amnt, 
   txnNote: 'Test',
-  callback_url: 'https://trustmyhost.in/trial/txnResult',
-  custMobile: 7488843862,
-  custEmail: 'anurage@gmail.com'
+  callback_url: 'http://127.0.0.1:5500/home-page/forgetpasswordhelper/conformpayment.html',
+  cust_Mobile: 7488843862,
+  cust_Email: 'anurage@gmail.com'
 };
-
-var secretKey = 'nezCqllWZN';
-generateChecksum(data, secretKey)
-  .then(checksum => {
-    console.log('Generated Checksum:', checksum);
-  })
-  .catch(error => {
-    console.error('Error generating checksum:', error);
-  });
+// generate CheckSum using API
+  var checksum = '';
+  var jsonData = JSON.stringify(data);
+  $.ajax({
+      type: "GET",
+      url: "https://apizone.in/api/v6/generateChecksum.php",
+      data: {param_list:jsonData},
+      success: function(response){
+        console.log(response);
+        let resData = JSON.parse(response);
+        checksum = resData.checksum;
+      }
+    });
 
 async function initiatePayment() {
   var price = getPriceFromCookie('selectedPremiumId');
   if (price) {
-    var upiuid = "paytmqr2810050501011vjmw66h68iw@paytm";
-    var token = "7e21e9-785d8c-c7eb40-19df3f-6034f0";
-    var orderId = generateUniqueOrderId();
-    var txnAmount = price;
-    var txnNote = "Test";
-    var callback_url = "https://trustmyhost.in/trial/txnResult";
-    var cust_Mobile = 7488843862;
-    var cust_Email = 'anurage@anurage.com';
-    var gatewayType = "Normal";
+    var upiuid = data.upiuid;
+    var token = data.token;
+    var orderId = data.orderId;
+    var txnAmount = data.txnAmount;
+    var txnNote = data.txnNote;
+    var callback_url = data.callback_url;
+    var cust_Mobile = data.cust_Mobile;
+    var cust_Email = data.cust_Email;
     var TXN_URL = "https://trustmyhost.in/order/process";
     var form = document.createElement("form");
     form.method = "post";
@@ -124,9 +76,9 @@ async function initiatePayment() {
       { name: "txnAmount", value: txnAmount },
       { name: "txnNote", value: txnNote },
       { name: "callback_url", value: callback_url },
-      { name: "gatewayType", value: gatewayType },
       { name: "cust_Mobile", value: cust_Mobile },
       { name: "cust_Email", value: cust_Email },
+      { name: "checksum", value: checksum },
     ];
 
     inputFields.forEach(function (field) {
@@ -136,32 +88,11 @@ async function initiatePayment() {
       input.value = field.value;
       form.appendChild(input);
     });
-
-    // Calculate the checksum using your generateChecksum function
-    var calculatedChecksum = await generateChecksum({
-      upiuid: upiuid,
-      token: token,
-      orderId: orderId,
-      txnAmount: txnAmount,
-      txnNote: txnNote,
-      callback_url: callback_url,
-      cust_Mobile: cust_Mobile,
-      cust_Email: cust_Email,
-    }, secretKey);
-
-    // Add the checksum parameter to the form
-    var checksumInput = document.createElement("input");
-    checksumInput.type = "hidden";
-    checksumInput.name = "checksum";
-    checksumInput.value = calculatedChecksum;
-    form.appendChild(checksumInput);
-
     document.body.appendChild(form);
     form.submit();
   } else {
     alert("Price not found in cookies.");
   }
 }
-
 // Add an event listener to the "Pay" button with the ID "submit"
 document.getElementById('paymentButton').addEventListener('click', initiatePayment);
