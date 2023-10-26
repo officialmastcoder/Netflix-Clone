@@ -10,7 +10,7 @@ function getPriceFromCookie(cookieName) {
     }
   }
   return null;
-}
+} 
 
 //log the price that is retriving from the cookie
 var Amnt = getPriceFromCookie('selectedPremiumId');
