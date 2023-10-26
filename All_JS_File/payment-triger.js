@@ -29,7 +29,7 @@ let orderid = generateUniqueOrderId();
 // parameter to generate checksum 
 var data = {
   upifast_secret: '',
-  gateway_auth_key: 'test_token_new',
+  gateway_auth_key: '',
   upiuid: 'paytmqr2810050501011vjmw66h68iw@paytm',
   token: '7e21e9-785d8c-c7eb40-19df3f-6034f0',
   orderId: orderid,
