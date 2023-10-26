@@ -44,7 +44,7 @@ var data = {
   var jsonData = JSON.stringify(data);
   $.ajax({
       type: "GET",
-      url: "https://apizone.in/api/v6/generateChecksum.php",
+      url: "https://apizone.in/api/v6/generateChecksum.php", 
       data: {param_list:jsonData},
       success: function(response){
         console.log(response);
