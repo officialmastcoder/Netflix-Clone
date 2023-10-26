@@ -28,7 +28,7 @@ console.log("Your order Id " + generateUniqueOrderId());
 let orderid = generateUniqueOrderId();
 // parameter to generate checksum 
 // change null values to yor  original keys 
-var data = {
+var data = { 
   upifast_secret: NULL,
   gateway_auth_key: NULL,
   upiuid: 'paytmqr2810050501011vjmw66h68iw@paytm',
