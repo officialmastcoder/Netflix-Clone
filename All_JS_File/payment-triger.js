@@ -40,7 +40,7 @@ var data = {
   cust_Email: 'anurage@gmail.com'
 };
 // generate CheckSum using API
-  var checksum = '';
+  var checksum = ''; 
   var jsonData = JSON.stringify(data);
   $.ajax({
       type: "GET",
